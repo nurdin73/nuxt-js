@@ -1,0 +1,1 @@
+export const BASE_URL = process.env.NUXT_ENV_API_URL || "https://scrapping-mahi.herokuapp.com/api/v1"
