@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#topBg {
+    left: 0;
+    right: 0;
+}
+#topBg, .home::after {
+    position: absolute;
+    top: 0;
+}
+#topBg::before {
+    content: '';
+    height: 100%;
+    background-image: linear-gradient(90deg,#306fd3 0,#2f6fd3 60%,#5d8fd9);
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    border-bottom-left-radius: 30px;
+}

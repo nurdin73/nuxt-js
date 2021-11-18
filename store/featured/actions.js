@@ -1,8 +1,9 @@
 import { BASE_URL } from "~/configs/app"
+
 export default {
-    async getCategories({ commit }) {
+    async featured({ commit }) {
         commit('loading', true)
-        this.$axios.get(`${BASE_URL}/categories/recipe`).then(res => res.data).then(res => {
+        this.$axios.get(`${BASE_URL}/recipes/featured`).then(res => res.data).then(res => {
             commit('data', res)
             commit('loading', false)
         }).catch(error => {

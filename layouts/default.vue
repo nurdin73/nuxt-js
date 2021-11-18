@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1>Default</h1>
+    <Navbar />
     <Nuxt keep-alive />
+    <Footer />
   </div>
 </template>
