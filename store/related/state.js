@@ -1,7 +1,8 @@
 export default () => {
     return {
         loading: false,
-        detail: null,
-        error: null,
+        articles: null,
+        recipes: null,
+        error: null
     }
 }

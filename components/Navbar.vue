@@ -7,19 +7,19 @@
           <li class="group relative">
             <router-link to="/recipes">Resep</router-link>
             <ul class="hidden group-hover:block absolute bg-white border rounded w-48 overflow-hidden right-0 z-50" v-if="recipeCategories">
-              <li class="block px-3 py-2 hover:bg-green-700" v-for="item in recipeCategories" :key="item.key"><router-link :to="`/recipe/${item.key}`">{{ item.title }}</router-link></li>
+              <li class="block px-3 py-2 hover:bg-green-700" v-for="item in recipeCategories" :key="item.key"><router-link :to="`/recipe/${item.key}`" class="block">{{ item.title }}</router-link></li>
             </ul>
           </li>
           <li class="group relative">
             <router-link to="/articles">Artikel</router-link>
             <ul class="hidden group-hover:block absolute bg-white border rounded w-48 overflow-hidden right-0 z-50" v-if="articleCategories">
-              <li class="block px-3 py-2 hover:bg-green-700" v-for="item in articleCategories" :key="item.key"><router-link :to="`/article/${item.key}`">{{ item.title }}</router-link></li>
+              <li class="block px-3 py-2 hover:bg-green-700" v-for="item in articleCategories" :key="item.key"><router-link :to="`/article/${item.key}`" class="block">{{ item.title }}</router-link></li>
             </ul>
           </li>
           <li class="group relative">
             <router-link to="/products">Produk</router-link>
             <ul class="hidden group-hover:block absolute bg-white border rounded w-48 overflow-hidden right-0 z-50" v-if="productCategories">
-              <li class="block px-3 py-2 hover:bg-green-700" v-for="item in productCategories" :key="item.key"><router-link :to="`/product/${item.key}`">{{ item.title }}</router-link></li>
+              <li class="block px-3 py-2 hover:bg-green-700" v-for="item in productCategories" :key="item.key"><router-link :to="`/product/${item.key}`" class="block">{{ item.title }}</router-link></li>
             </ul>
           </li>
         </ul>

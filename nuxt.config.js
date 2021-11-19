@@ -1,4 +1,8 @@
 export default {
+  loading: {
+    color: 'green',
+    height: '5px'
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Clone MAHI',
